@@ -19,4 +19,8 @@ class Show < ActiveRecord::Base
     show.first 
   end
   
+  def self.sum 
+    Show.sum(:rating)
+  end 
+  
 end 
